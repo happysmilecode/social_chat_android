@@ -1,0 +1,42 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.stfalcon.chatkit.dialogs.DialogsList
+            android:id="@+id/dialogsList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="50dp"
+            app:dialogDateColor="#000"
+            app:dialogUnreadBubbleBackgroundColor="@color/colorPrimary"
+            app:dialogUnreadItemBackground="#fdfdfd"
+            app:dialogUnreadTitleTextStyle="bold"
+            app:reverseLayout="true" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:id="@+id/sora"
+            android:layout_marginTop="40dp"
+            android:layout_height="250dp"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="70dp"
+        app:srcCompat="@drawable/float_btn"
+        android:background="@color/colorPrimary"
+        android:backgroundTint="@color/colorPrimary"
+        tools:ignore="VectorDrawableCompat" />
+</FrameLayout>
